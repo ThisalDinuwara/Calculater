@@ -43,11 +43,15 @@ function fn9(){
     let prev = document.getElementById("ans").innerHTML;
     document.getElementById("ans").innerHTML = prev + 9;
 }
-//anser 
-function clear(){
-   document.getElementById("ans").innerHTML = "";
-   
+function clearDisplay() {
+    document.getElementById("ans").innerHTML = "";
+    firstSave = null;
+    secondSave = null;
+    op = null;
 }
+
+   
+
 
 //for add buton
 function add(){
